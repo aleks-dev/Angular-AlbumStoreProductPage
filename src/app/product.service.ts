@@ -9,11 +9,9 @@ export class ProductService {
 
   constructor(private _http: Http) { }
   
-  public getAlbum(id: number): Observable<Album> {
+  public getAlbum(id: number) {
     return this._http.get(this._albumUrl).map(
-      (response: Response) => {
-          return <Album>response.json();
-        }
+      response => response.json()        
       );
     }
   }
