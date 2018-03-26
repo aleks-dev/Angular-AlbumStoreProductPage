@@ -9,8 +9,8 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ProductService {
-  private _albumUrl: string = '../assets/album.json';
-  private _productstUrl: string = '../assets/products.json';
+  private _albumUrl = '../assets/album.json';
+  private _productstUrl = '../assets/products.json';
 
   constructor(private _http: Http) { }
   
